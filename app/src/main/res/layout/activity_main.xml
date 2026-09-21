@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:background="#1565C0">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🚗 AutoCare"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Service Manager"
+                android:textSize="16sp"
+                android:textColor="#E3F2FD"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+
+        <!-- Main Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <!-- Vehicle Details Heading -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Details"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#172B4D"
+                android:layout_marginBottom="12dp" />
+
+
+            <!-- Vehicle Number -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registration Number"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#344563" />
+
+            <EditText
+                android:id="@+id/etVehicleNumber"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="e.g. KA01AB1234"
+                android:textColor="#172B4D"
+                android:textColorHint="#7A869A"
+                android:backgroundTint="#1565C0"
+                android:inputType="textCapCharacters"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="16dp" />
+
+
+            <!-- Vehicle Model -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Model"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#344563" />
+
+            <EditText
+                android:id="@+id/etVehicleModel"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="e.g. Hyundai i20"
+                android:textColor="#172B4D"
+                android:textColorHint="#7A869A"
+                android:backgroundTint="#1565C0"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="24dp" />
+
+
+            <!-- Fuel Type -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fuel Type"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#172B4D" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select your vehicle's fuel type"
+                android:textSize="14sp"
+                android:textColor="#6B778C"
+                android:layout_marginTop="3dp" />
+
+            <RadioGroup
+                android:id="@+id/rgFuel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="6dp">
+
+                <RadioButton
+                    android:id="@+id/rbPetrol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Petrol"
+                    android:textSize="16sp"
+                    android:textColor="#172B4D"
+                    android:buttonTint="#1565C0" />
+
+                <RadioButton
+                    android:id="@+id/rbDiesel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Diesel"
+                    android:textSize="16sp"
+                    android:textColor="#172B4D"
+                    android:buttonTint="#1565C0" />
+
+                <RadioButton
+                    android:id="@+id/rbElectric"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Electric"
+                    android:textSize="16sp"
+                    android:textColor="#172B4D"
+                    android:buttonTint="#1565C0" />
+
+            </RadioGroup>
+
+
+            <!-- Service Type -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Service Type"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#172B4D"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What does your vehicle need?"
+                android:textSize="14sp"
+                android:textColor="#6B778C"
+                android:layout_marginTop="3dp" />
+
+            <RadioGroup
+                android:id="@+id/rgService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="6dp">
+
+                <RadioButton
+                    android:id="@+id/rbGeneral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="General Service"
+                    android:textSize="16sp"
+                    android:textColor="#172B4D"
+                    android:buttonTint="#1565C0" />
+
+                <RadioButton
+                    android:id="@+id/rbOil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Oil Change"
+                    android:textSize="16sp"
+                    android:textColor="#172B4D"
+                    android:buttonTint="#1565C0" />
+
+                <RadioButton
+                    android:id="@+id/rbFull"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Full Service"
+                    android:textSize="16sp"
+                    android:textColor="#172B4D"
+                    android:buttonTint="#1565C0" />
+
+            </RadioGroup>
+
+
+            <!-- Pickup -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pickup Service"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#172B4D"
+                android:layout_marginTop="20dp" />
+
+            <ToggleButton
+                android:id="@+id/togglePickup"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:textOn="✓ Pickup Required: YES"
+                android:textOff="Pickup Required: NO"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#1565C0"
+                android:layout_marginTop="8dp" />
+
+
+            <!-- Book Service -->
+            <Button
+                android:id="@+id/btnBookService"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Book Service"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#0D47A1"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="10dp" />
+
+
+            <!-- Fragment Container -->
+            <FrameLayout
+                android:id="@+id/fragmentContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

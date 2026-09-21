@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFFFFF">
+
+    <!-- Top divider -->
+    <View
+        android:layout_width="50dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center"
+        android:background="#1565C0"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Additional Services"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#0D47A1" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose any additional services you need"
+        android:textSize="14sp"
+        android:textColor="#5F6C7B"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="14dp" />
+
+    <!-- Vehicle Inspection -->
+    <CheckBox
+        android:id="@+id/cbInspection"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Vehicle Inspection"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#172B4D"
+        android:buttonTint="#1565C0"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp" />
+
+    <!-- Wheel Alignment -->
+    <CheckBox
+        android:id="@+id/cbWheel"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Wheel Alignment Check"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#172B4D"
+        android:buttonTint="#1565C0"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp" />
+
+    <!-- Interior Cleaning -->
+    <CheckBox
+        android:id="@+id/cbInterior"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Interior Cleaning"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#172B4D"
+        android:buttonTint="#1565C0"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp" />
+
+    <!-- Confirm -->
+    <Button
+        android:id="@+id/btnConfirmService"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Confirm Service"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#0D47A1"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
